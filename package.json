@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc",
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
@@ -44,10 +45,6 @@
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
-  },
-  "peerDependencies": {
-    "react": ">= 16.8.0",
-    "react-dom": ">= 16.8.0"
   },
   "files": [
     "dist"
